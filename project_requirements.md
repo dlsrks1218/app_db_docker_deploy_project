@@ -8,7 +8,7 @@
 
 ## 데이터베이스 모델링  
 
-![ex_modeling](./img/modeling.png)
+![ex_modeling](./img/modeling.png)  
 
 ## 기능적 요구사항(Functional Requirements)
 
