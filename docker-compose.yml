@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+    python:
+        container_name: python
+        image: dlsrks1218/proj_python:1.0
+        # python 실행 컨테이너가 종료되지 않고 유지
+        command: tail -f /dev/null
+        # mysql 컨테이너가 있어야만 python 서비스가 작동된다
+        depends_on: 
+            - mysql
+        # - 연결할 서비스명:별칭
+        links:
+            - mysql:mysql
+
+    mysql:
+        container_name: mysql
+        image: dlsrks1218/proj_mysql:1.0
+        restart: always
+        environment: 
+            - MYSQL_ALLOW_EMPTY_PASSWORD="true"
+        ports: 
+            - "3306:3306"
