@@ -6,10 +6,6 @@
 
 판매자로 접속하여 고객, 차량, 주문 관리  
 
-## 데이터베이스 모델링  
-
-![ex_modeling](./img/modeling.png)  
-
 ## 기능적 요구사항(Functional Requirements)
 
 ### 추가 할 것
