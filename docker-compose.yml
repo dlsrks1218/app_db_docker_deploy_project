@@ -4,7 +4,11 @@ services:
     python:
         container_name: python
         image: dlsrks1218/proj_python:1.0
+        # tail : 파일의 내용을 뒤에서 부터 출력, 파이프를 통해 받은 입력을 출력하거나
+        # 특정 프로세스나 파일의 로그를 확인
+        # /dev/null : 필요 없어진 출력을 버릴때 사용하거나 빈 파일로 사용
         # python 실행 컨테이너가 종료되지 않고 유지
+		# tail -f /dev/null : /dev/null(빈 파일)의 마지막 10줄을 실시간으로 계속 출력한다
         command: tail -f /dev/null
         # mysql 컨테이너가 있어야만 python 서비스가 작동된다
         depends_on: 
