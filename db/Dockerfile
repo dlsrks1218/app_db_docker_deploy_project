@@ -11,5 +11,4 @@ COPY ./mysql_init_files/init.sql /docker-entrypoint-initdb.d/
 
 # # (4) 스크립트, mysqld 실행
 ENTRYPOINT ["docker-entrypoint.sh"]
-
 CMD ["mysqld"]
