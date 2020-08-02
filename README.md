@@ -12,6 +12,14 @@
 
 ## 이슈  
 
+* ~~파이썬 컨테이너 실행시 꺼지는 문제~~  
+
+  * tail -f /dev/null 로 해결  
+
+* ~~Docker exec -it <컨테이너 id> /bin/bash로 접속 시 파이썬 프로젝트 실행 불가 문제~~  
+
+  * python 이미지 빌드 시 프로젝트 실행 명령어를 ~/.bashrc에 추가함으로써 해결  
+
 ## 추가 개선 사항  
 
 * ~~app, db 두 개의 Dockerfile을 빌드하고 태깅, Docker Hub에 push 하는 과정 자동화하기~~  
