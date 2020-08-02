@@ -9,6 +9,6 @@ COPY etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/mysql.conf.d/
 COPY etc/mysql/conf.d/mysql.cnf /etc/mysql/conf.d/
 COPY ./mysql_init_files/init.sql /docker-entrypoint-initdb.d/
 
-# # (4) 스크립트, mysqld 실행
+# (3) 스크립트, mysqld 실행
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["mysqld"]
