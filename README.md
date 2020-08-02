@@ -14,6 +14,6 @@
 
 ## 추가 개선 사항  
 
-* app, db 두 개의 Dockerfile을 빌드하고 태깅, Docker Hub에 push 하는 과정 자동화하기  
+* ~~app, db 두 개의 Dockerfile을 빌드하고 태깅, Docker Hub에 push 하는 과정 자동화하기~~  
 
-* 위 과정 수행 시 프로젝트 전체 소스코드를 Github에 push 자동화하기  
+* ~~위 과정 수행 시 프로젝트 전체 소스코드를 Github에 push 자동화하기~~  
